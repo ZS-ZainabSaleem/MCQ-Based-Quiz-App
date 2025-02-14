@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3CCC9C9"
+    tools:context=".QuizActivity">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+        
+
+    <!--QuizNo-->
+    <TextView
+        android:id="@+id/tvQuizNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1/10"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        />
+    <!--QuizBox-->
+    <TextView
+        android:id="@+id/tvQuizBox"
+        android:layout_width="330dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/custom_radiobutton"
+        android:text="Question 1"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+         />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvQuizBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.669">
+
+
+        <RadioButton
+            android:id="@+id/rbOption1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@drawable/custom_radiobutton"
+            android:buttonTint="@android:color/transparent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <RadioButton
+            android:id="@+id/rbOption2"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@drawable/custom_radiobutton"
+            android:buttonTint="@android:color/transparent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <RadioButton
+            android:id="@+id/rbOption3"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@drawable/custom_radiobutton"
+            android:buttonTint="@android:color/transparent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <RadioButton
+            android:id="@+id/rbOption4"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@drawable/custom_radiobutton"
+            android:buttonTint="@android:color/transparent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+    </RadioGroup>
+
+    <!-- Navigation Buttons -->
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="98dp"
+        android:layout_marginBottom="70dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btnPrevious"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#02434B"
+            android:enabled="false"
+            android:text="Previous"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#02434B"
+            android:text="Next"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

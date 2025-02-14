@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:shape="rectangle">
+    <solid android:color="#40686D"/>
+    <corners android:bottomLeftRadius="200dp" android:bottomRightRadius="200dp"
+        />
+</shape>-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="500dp"
+    android:height="500dp"
+    android:viewportWidth="400"
+    android:viewportHeight="250">
+
+    <path
+        android:fillColor="#40686D"
+        android:pathData="M 0,0 H 400 V 250 Q 200 170, 0 250 Z" />
+</vector>
